@@ -1,8 +1,11 @@
-import React from 'react'
-import HeroSection from './Pages/HeroSection'
+import React from 'react';
+import HeroSection from './Pages/HeroSection';
 
 export default function AppComp() {
   return (
-    <HeroSection />
+    <div>
+       <HeroSection />
+    </div>
+    
   )
 }

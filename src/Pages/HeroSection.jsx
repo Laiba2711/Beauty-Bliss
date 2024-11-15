@@ -14,6 +14,9 @@ export default function HeroSection() {
         <img src="./BB-HERO3.jpg" alt="Right Image"/>
       </div>
     </div>
+    <div className='new'>
+<h1>Hello</h1>
+    </div>
   </div>
     </>
     
