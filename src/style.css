@@ -129,3 +129,101 @@
   text-align: center;
   width: 29cm
 }
+.card-page {
+  height: 95vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image:linear-gradient(to left, rgba(17, 16, 17, 0.721), rgba(43, 40, 42, 0.457)), url('./image/back.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Image Styling */
+.card-img {
+  height: 65vh;
+  width: 25vw;
+  max-width: 300px;
+  margin: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+/* Description Box Styling */
+.card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+} 
+
+
+/* Title Styling */
+.card-titlee {
+  color: rgb(55, 55, 55);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+}
+
+/* Paragraph Styling */
+.card-description p {
+  color: rgb(80, 80, 80);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 15px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Price Styling */
+.card-description h3 {
+  font-size: 2rem;
+  color: rgb(75, 0, 130);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Button Styling */
+.card-description button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(75, 0, 130);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-description button:hover {
+  background-color: rgb(60, 0, 110);
+  transform: scale(1.05);
+}
+.cardBtn{
+  text-decoration: none;
+  padding: 10px 17px;
+  font-size: 1rem;
+  background-color: rgb(75, 0, 130);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 10px;
+} 
