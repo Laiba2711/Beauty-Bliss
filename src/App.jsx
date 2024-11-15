@@ -5,6 +5,7 @@ import Cards from './Pages/CardSection'
 export default function AppComp() {
   return (
     <>
+
     <HeroSection />
     <Cards />
     </>
