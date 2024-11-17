@@ -137,6 +137,7 @@ footer .content .link-boxes .box{
 .content .link-boxes .box li a:hover{
   opacity: 1;
   text-decoration: underline;
+  background-color: transparent;
 }
 .content .link-boxes .input-box{
   margin-right: 55px;
