@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
+// import { Link } from 'react-router-dom';
 
-export default function  
-() {
+export default function() {
   return (
    <nav className='navbar'>
    <div className='header'>
@@ -17,7 +17,9 @@ export default function
   <i class="fa-solid fa-address-book" aria-hidden="true"></i>   CONTACT</a>
   <a href="#contact">
   <i class="fa-solid fa-user" aria-hidden="true"></i>  PROFILE</a>
+  
     </ul>
+   
    </div>
    <div className='topnav'>
    <div className="menu">
@@ -27,13 +29,14 @@ export default function
   <a href="#contact">LIPS</a>
   </div>
   <div class="search-container">
-            <input type="text" id="searchBar" placeholder="Type to search..."  onchange="searchData()"  />
+            <input  type="text" id="searchBar" placeholder="Type to search..."  onchange="searchData()"  />
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
         <div className="cart">
         <i class="fa fa-shopping-cart" ></i>
         </div>
    </div>
+   
    </nav>
   )
 }
