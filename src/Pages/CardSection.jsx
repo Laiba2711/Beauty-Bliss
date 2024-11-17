@@ -39,6 +39,8 @@ import '../style.css';
 export default function Cards() {
   return (
     <div className='beauty'>
+         <div>
+               <h1 className='CardTitle'>Our Products<hr /></h1></div>
       {dior.map((meraMakeup) => (
         <Makeup key={meraMakeup.id} {...meraMakeup} />
       ))}

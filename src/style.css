@@ -130,7 +130,7 @@
   width: 29cm
 }
 .card-page {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
