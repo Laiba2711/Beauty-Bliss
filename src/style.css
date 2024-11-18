@@ -368,18 +368,23 @@ section {
   line-height: 80px;
   margin: 0 5px;
 }
-.topnav-icons li a {
-  color: white;
+.topnav-icons li button {
+  color: rgb(233, 230, 232);
   font-size: 17px;
   padding: 7px 13px;
-  border-radius: 3px;
+  border-radius: 6px;
   text-transform: uppercase;
   text-decoration: none;
+  border-style: hidden;
+  background-color: transparent;
 }
-.topnav-icons a.active,
-a:hover {
+.topnav-icons button.active,
+button:hover {
   background: #310223;;
   transition: .5s;
+}
+.topnav-icons li button:hover{
+  background-color: #310223;
 }
 .checkbtn {
   font-size: 22px;
@@ -436,7 +441,7 @@ a:hover {
   }
 }
 section {
-  /* background: url("bg.jpg") no-repeat; */
+  
   background-size: cover;
   height: calc(100vh - 80px);
 }

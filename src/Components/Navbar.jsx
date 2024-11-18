@@ -11,10 +11,11 @@ export default function Navbarr() {
    <img src="logo1.png" alt="" height="80%"   />
     <ul className='nav-icons'>
       <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="#" >About</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Feedback</a></li>
     </ul>
+    <div id="productContainer"></div>
   </nav>
     </div>
    
