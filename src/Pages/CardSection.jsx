@@ -35,6 +35,23 @@ import { dior } from './Api.js';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import '../style.css';
+import {useState} from "react";
+import input from '../Components/InputField.jsx';
+
+const CardSection = () =>{
+  const [inputValue, setInputValue] = useState("");
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value)
+  }
+  return(
+    <div>
+      <h1>Input Field Example</h1>
+      <input  type="text" id="searchBar" placeholder="Type to search..."  onchange="searchData()"  />
+      </div>
+  )
+};
+
+
 
 export default function Cards() {
   return (
