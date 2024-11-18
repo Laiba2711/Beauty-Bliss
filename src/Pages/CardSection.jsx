@@ -42,6 +42,7 @@ import '../style.css';
 
 export default function Cards() {
   return (
+
      <div Shop-area>
 <div className='topnav'>
 <ul className='topnav-icons'>
@@ -54,8 +55,11 @@ export default function Cards() {
       <div className='search-bar'>
     <input type="search" className='border' placeholder='Search here...' />
       </div>
-</div>
-  <div className='beauty'>
+
+    <div className='beauty'>
+         <div>
+               <h1 className='CardTitle'>Our Products<hr /></h1></div>
+
       {dior.map((meraMakeup) => (
         <Makeup key={meraMakeup.id} {...meraMakeup} />
       ))}

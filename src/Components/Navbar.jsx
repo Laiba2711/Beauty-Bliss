@@ -1,5 +1,6 @@
 import React from 'react';
-export default function() {
+
+export default function Navbarr() {
   return (
     <div className='Navbar'>
  <nav>
@@ -7,11 +8,10 @@ export default function() {
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-   <img src="logo1.JPG" alt="" height="100px"   />
+   <img src="logo1.png" alt="" height="80%"   />
     <ul className='nav-icons'>
       <li><a class="active" href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Feedback</a></li>
     </ul>
