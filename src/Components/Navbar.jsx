@@ -1,7 +1,8 @@
 import React from 'react';
 export default function() {
   return (
-    <nav>
+    <div className='Navbar'>
+ <nav>
     <input type="checkbox" id="check"/>
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
@@ -15,5 +16,7 @@ export default function() {
       <li><a href="#">Feedback</a></li>
     </ul>
   </nav>
+    </div>
+   
   )
 }
