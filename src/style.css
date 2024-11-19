@@ -6,10 +6,9 @@
 
 body{
   background-image:linear-gradient(to left, rgba(160, 151, 160, 0.721), rgba(43, 40, 42, 0.457)), url('./image/image.png'); 
-
+   height: 550vh;
 }
 
-  
   .heroSec {
     width: 98.6.5vw;        
     height: 100vh;        
@@ -17,7 +16,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 55px 0px;
+    margin: 85px 0px;
   }
   .container {
     position: relative;
@@ -135,7 +134,7 @@ body{
 }
 .CardTitle {
   font-size: 3.5em;
-  font-family: Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #e1d936; 
   text-shadow: 1px 1px 2px rgba(235, 220, 220, 0.3);
   padding: 10px 20px;
@@ -246,16 +245,16 @@ body{
 } 
 .Navbar{
   padding: 40px 20px 10px 20px;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 nav {
   display: flex;
   background-image: linear-gradient( rgba(26, 0, 21, 3), rgba(87, 7, 73, 0.5));
   height: 100px;
   width: 100%;
-
   border: 1px solid #310223;
   border-radius: 20px;
-
   justify-content: space-around;
   align-items: center;
 }
@@ -285,6 +284,49 @@ nav ul li a {
 }
 .nav-icons a.active,
 a:hover {
+  background: #a30e60;;
+  transition: .5s;
+}
+
+.dropdown Button {
+  position: relative;
+  color: white;
+  font-size: 17px;
+  padding: 7px 15px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.dropdown-menu{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  background-image:linear-gradient(to left, rgba(17, 16, 17, 0.721), rgba(43, 40, 42, 0.457)), url('./image/back.jpg'); 
+  background-repeat: no-repeat;   
+  background-size: cover;
+  width: 12%;
+}
+.dropdown-menu Button{
+  margin: 2px;
+  color: white;
+  border-radius: 2px;
+  width: 100%;
+  
+}
+.dropdown-menu{
+  position: absolute;
+  top: 112px;
+  right: 73px;
+  display: none;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-menu Button.active,
+Button:hover {
   background: #a30e60;;
   transition: .5s;
 }

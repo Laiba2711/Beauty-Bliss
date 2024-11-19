@@ -8,6 +8,7 @@ root.render(
   <React.StrictMode>
 
     <AppComp />
+    
   </React.StrictMode>
 );
 
