@@ -12,6 +12,7 @@ export default function Navbarr() {
    <img src="logo1.png" alt="" height="80%"   />
     <ul className='nav-icons'>
       <li><a class="active" href="#">Home</a></li>
+
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>      
     </ul>
@@ -25,6 +26,7 @@ export default function Navbarr() {
     <Button className="dropdown-item" type="button">Log In</Button>
   </div>
 </div>
+
   </nav>
     </div>
    
