@@ -309,9 +309,14 @@ a:hover {
   background-repeat: no-repeat;   
   background-size: cover;
   width: 12%;
+  z-index: 1;
 }
-.dropdown-menu Button{
-  margin: 2px;
+.dropdown-menu a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px;
   color: white;
   border-radius: 2px;
   width: 100%;
@@ -510,7 +515,7 @@ section {
    padding: 13px;
    border: 1px solid white;
   margin: 0 8px;
-  border-radius: 50%;
+  border-radius: 70%;
   text-align: center;
   color: #fff;
   font-size: 17px;
@@ -522,4 +527,12 @@ section {
 }
 .cart-icon i:hover{
   color: #310223;
-  background: #fff;}
+  background: #fff;
+  border-radius:50% ;
+}
+.cart-icon:hover{
+  background: transparent;
+}
+  #searchBtn{
+    display: none;
+  }

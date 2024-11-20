@@ -1,24 +1,24 @@
 
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useParams, useNavigate } from 'react-router-dom'; 
 import { dior } from './Api.js';
 import '../style.css';
-import { useCart } from './CartContext'; // Import useCart from the CartContext
+import { useCart } from './CartContext';
 
 export default function CardPage() { 
   const { id } = useParams(); 
-  const navigate = useNavigate(); // useNavigate for navigation
-  const { addToCart } = useCart(); // Get addToCart from the CartContext
-  const product = dior.find((item) => item.id === parseInt(id)); // Find the product by id
+  const navigate = useNavigate();  
+  const { addToCart } = useCart(); 
+  const product = dior.find((item) => item.id === parseInt(id)); 
 
   if (!product) {
-    return <div>Product not found</div>; // Handle case where product doesn't exist
+    return <div>Product not found</div>; 
   }
 
   const { Image, title, description, price } = product;
 
   const viewCart = () => {
-    navigate('/cart'); // Navigate to the cart page
+    navigate('/cart'); 
   };
 
   return (

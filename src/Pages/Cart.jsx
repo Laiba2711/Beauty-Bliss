@@ -15,7 +15,7 @@ const Cart = () => {
       return;
     }
     alert(`Order placed successfully! Your total is $${totalCartPrice.toFixed(2)}.`);
-    navigate('/'); // Redirect back to the product page
+    navigate('/card'); 
   };
 
   return (

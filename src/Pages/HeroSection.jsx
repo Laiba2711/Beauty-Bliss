@@ -1,5 +1,6 @@
 import React from 'react'
 import "../style.css"
+import Cards from './CardSection'
 export default function HeroSection() {
   return (
     <>
@@ -15,6 +16,8 @@ export default function HeroSection() {
       </div>
     </div>
   </div>
+  <Cards />
+  
     </>
     
   )

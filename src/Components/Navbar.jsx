@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 
 export default function Navbarr() {
   return (
@@ -12,7 +12,7 @@ export default function Navbarr() {
     </label>
    <img src="logo1.png" alt="" height="80%"   />
     <ul className='nav-icons'>
-      <li><a class="active" href="#">Home</a></li>
+      <li><a class="active" href="/">Home</a></li>
 
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>      
@@ -24,8 +24,8 @@ export default function Navbarr() {
     Profile <i class='fas fa-caret-down' ></i>
   </Button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <Button className="dropdown-item" type="button">Sign Up</Button>
-    <Button className="dropdown-item" type="button">Log In</Button>
+    <a href="/signup" className="dropdown-item" type="button">Sign Up </a>
+    <a href="/login" className="dropdown-item" type="button">Log In </a>
   </div>
 </div>
 

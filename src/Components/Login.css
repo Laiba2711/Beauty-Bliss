@@ -1,0 +1,99 @@
+body { 
+    margin: 0;
+    padding: 0;
+  }
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to bottom right, #504c4d98, #413d41b2), url("../image/LSB.jpg");
+    background-repeat:unset;
+    background-size: cover;
+    height: 100vh;
+  }
+.login-card {
+    background-color: rgba(240, 248, 255, 0.705);
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    width: 350px;
+    text-align: center;
+  }
+  .login-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #e91e63;
+    margin-bottom: 5px;
+  }
+  .login-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .form-group label {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  .form-group input:focus {
+    outline: none;
+    border-color: #e91e63;
+  }
+  .login-btn {
+    background: #e91e63;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+  }
+  .login-btn:hover {
+    background: #d81b60;
+    box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+  }
+  .register-prompt {
+    font-size: 14px;
+    color: #888;
+    margin-top: 15px;
+  }
+  .register-prompt a {
+    color: #e91e63;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .register-prompt a:hover {
+    text-decoration: underline;
+  }
+.LSB a{
+  text-decoration: none;
+  color: rgb(62, 65, 209);
+  font-weight: bold;
+}
+.LSB a:hover{
+  text-decoration: underline;
+   color: rgb(210, 30, 30);
+   background-color: transparent;
+}
+
+    

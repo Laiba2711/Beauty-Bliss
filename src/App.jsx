@@ -1,18 +1,13 @@
 
 import React from 'react';
-import HeroSection from './Pages/HeroSection';
-import CardNav from './Pages/CardNav';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
-
+import NavigatePage from './Pages/CardNav';
 
 export default function AppComp() {
   return (
+    
     <>
-    <Navbar />
-    <HeroSection />
-    <CardNav />
-    <Footer />
+    <NavigatePage />
     </>
+    
   )
 }
