@@ -16,7 +16,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 85px 0px;
+    margin: 105px 0px;
   }
   .container {
     position: relative;
@@ -102,7 +102,7 @@ body{
     background-image:linear-gradient(to left, rgba(17, 16, 17, 0.721), rgba(43, 40, 42, 0.457)), url('./image/back.jpg'); 
     background-repeat: no-repeat;   
     background-size: cover;
-    margin-top: 50px;
+    margin: 100px 0px;
 }
 .beauty img{
     height: 35vh;
@@ -248,7 +248,7 @@ body{
   margin-bottom: 10px;
 } 
 .Navbar{
-  padding: 40px 20px 10px 20px;
+  /* padding: 40px 20px 10px 20px; */
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -258,7 +258,7 @@ nav {
   height: 100px;
   width: 100%;
   border: 1px solid #310223;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   justify-content: space-around;
   align-items: center;
 }
@@ -325,8 +325,8 @@ a:hover {
 }
 .dropdown-menu{
   position: absolute;
-  top: 112px;
-  right: 73px;
+  top: 71px;
+  right: 62px;
   display: none;
   border-radius: 5px;
 }
@@ -398,13 +398,14 @@ section {
 .topnav{
   display: flex;
   background-image: linear-gradient( rgba(26, 0, 21, 3), rgba(87, 7, 73, 0.5));
-  height: 100px;
-  width: 95%;
+  height: 80px;
+  padding: 40px 0px;
+  width: 100%;
   border: 1px solid #310223;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   justify-content: space-around;
   align-items: center;
-  margin: auto;
+  /* margin: auto; */
   }
 .topnav-icons  {
   float: right;
@@ -492,3 +493,37 @@ section {
   background-size: cover;
   height: calc(100vh - 80px);
 }
+.search-bar{
+  width: 12cm;
+  position: relative;
+}
+.search-bar input{
+  width: 100%;
+  padding: 10px 30px 10px 10px;
+  text-align: left;
+  border: 2px solid #310223;
+  border-radius: 10px;
+}
+.search-bar i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.cart-icon i{
+   padding: 13px;
+   border: 1px solid white;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  transition: all 0.4s ease;
+}
+.cart-icon i{
+  background:#a30e60;
+
+}
+.cart-icon i:hover{
+  color: #310223;
+  background: #fff;}

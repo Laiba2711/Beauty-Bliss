@@ -30,30 +30,17 @@
 //             </>
 //     )
 // }
-import React , { useEffect, useState }  from 'react';
+import React from 'react';
 import { dior } from './Api.js';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import '../style.css';
 
+
+
+
+
 export default function Cards() {
-  const [filteredProducts, setFilteredProducts] = useState(dior); // Initial products
-  const [category, setCategory] = useState('ALL'); // Set initial category to 'ALL'
-
-  // Update filtered products when category changes
-  useEffect(() => {
-    if (category === 'ALL') {
-      setFilteredProducts(dior);
-    } else {
-      const products = dior.filter(product => product.Category === category);
-      setFilteredProducts(products);
-    }
-  }, [category]);
-
-  // Function to handle category change
-  const handleCategoryChange = (newCategory) => {
-    setCategory(newCategory);
-  };
   return (
     <>
      <div Shop-area>
@@ -67,13 +54,12 @@ export default function Cards() {
       <div className='search-bar'>
     <input type="search" className='border' placeholder='Search here...' />
       </div>
-
       </div>
     <div className='beauty'>
          <div>
                <h1 className='CardTitle'>Our Products<hr /></h1></div>
 
-      {filteredProducts.map((meraMakeup) => (
+      {dior.map((meraMakeup) => (
         <Makeup key={meraMakeup.id} {...meraMakeup} />
       ))}
     </div>

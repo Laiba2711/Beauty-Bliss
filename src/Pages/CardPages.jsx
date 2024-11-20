@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; // Import useNavigate
 import { dior } from './Api.js';
@@ -9,7 +10,7 @@ export default function CardPage() {
   const navigate = useNavigate(); // useNavigate for navigation
   const { addToCart } = useCart(); // Get addToCart from the CartContext
   const product = dior.find((item) => item.id === parseInt(id)); // Find the product by id
-  
+
   if (!product) {
     return <div>Product not found</div>; // Handle case where product doesn't exist
   }
