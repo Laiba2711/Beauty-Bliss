@@ -30,17 +30,22 @@
 //             </>
 //     )
 // }
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { dior } from './Api.js';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import '../style.css';
-
-
-
+import cartsection from './cartsection.jsx';
 
 
 export default function Cards() {
+  const [query, setQuery]= useState("");
+
+
+  function changeHandler(e) {
+    console.log(e.target.value);
+    setQuery(e.target.value);
+  }
   return (
 
      <div Shop-area>
@@ -53,14 +58,23 @@ export default function Cards() {
       {/* <li><a href="#">Lips</a></li> */}
     </ul>
       <div className='search-bar'>
-    <input type="search" className='border' placeholder='Search here...' />
+    <input className='border' placeholder='Search here...' type="text" id="searchInput" value={query}
+      onChange={changeHandler} />
+      <span id="searchBtn" >
+      <i className='fa fa-search' ></i>
+      </span>
       </div>
+      <div className='cart-icon'>
+      <i class="fas fa-shopping-cart"></i>
+          </div>
       </div>
     <div className='beauty'>
          <div>
                <h1 className='CardTitle'>Our Products<hr /></h1></div>
 
-      {dior.map((meraMakeup) => (
+      {dior.filter((meraMakeup)=>{
+        return meraMakeup.title.toLowerCase().includes(query);
+      }).map((meraMakeup) => (
         <Makeup key={meraMakeup.id} {...meraMakeup} />
       ))}
     </div>

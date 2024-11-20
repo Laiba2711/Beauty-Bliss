@@ -16,7 +16,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 85px 0px;
+    margin: 50px 0px;
   }
   .container {
     position: relative;
@@ -482,3 +482,37 @@ section {
   background-size: cover;
   height: calc(100vh - 80px);
 }
+.search-bar{
+  width: 12cm;
+  position: relative;
+}
+.search-bar input{
+  width: 100%;
+  padding: 10px 30px 10px 10px;
+  text-align: left;
+  border: 2px solid #310223;
+  border-radius: 10px;
+}
+.search-bar i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.cart-icon i{
+   padding: 18px;
+   border: 1px solid white;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  transition: all 0.4s ease;
+}
+.cart-icon i{
+  background:#310223;
+
+}
+.cart-icon i:hover{
+  color: #310223;
+  background: #fff;}
