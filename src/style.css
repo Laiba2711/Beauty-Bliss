@@ -6,7 +6,7 @@
 
 body{
   background-image:linear-gradient(to left, rgba(160, 151, 160, 0.721), rgba(43, 40, 42, 0.457)), url('./image/image.png'); 
-   height: 550vh;
+  background-position: right;
 }
 
   .heroSec {
@@ -224,12 +224,16 @@ body{
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card-description button:hover {
   background-color: rgb(60, 0, 110);
   transform: scale(1.05);
+}
+#cartButton{
+  background-color: #a30e60;
 }
 .cardBtn{
   text-decoration: none;
@@ -284,7 +288,7 @@ nav ul li a {
 }
 .nav-icons a.active,
 a:hover {
-  background: #a30e60;;
+  background: #a30e60;
   transition: .5s;
 }
 
@@ -293,10 +297,11 @@ a:hover {
   color: white;
   font-size: 17px;
   padding: 7px 15px;
-  border-radius: 3px;
+  border-radius: 5px;
+  border: 1px solid #530430;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: transparent;
+  background-color: #a30e60;
   overflow: hidden;
 }
 
@@ -314,6 +319,8 @@ a:hover {
   color: white;
   border-radius: 2px;
   width: 100%;
+  border: 1px solid black;
+  border-radius: 5px ;
   
 }
 .dropdown-menu{
@@ -321,15 +328,12 @@ a:hover {
   top: 112px;
   right: 73px;
   display: none;
+  border-radius: 5px;
 }
 .dropdown:hover .dropdown-menu{
   display: block;
 }
-.dropdown-menu Button.active,
-Button:hover {
-  background: #a30e60;;
-  transition: .5s;
-}
+
 .checkbtn {
   font-size: 22px;
   color: white;
@@ -342,6 +346,7 @@ Button:hover {
 #check {
   display: none;
 }
+
 @media (max-width: 1050px) {
   label.logo {
     padding-left: 30px;

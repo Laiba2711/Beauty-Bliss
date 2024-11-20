@@ -1,32 +1,37 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom'; // Hook to get dynamic route params
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom'; // Import useNavigate
 import { dior } from './Api.js';
-import { Button } from 'react-bootstrap'; // For "Add to Cart" button
 import '../style.css';
+import { useCart } from './CartContext'; // Import useCart from the CartContext
 
-
-export default function CardPage() {
-  const { id } = useParams(); // Get the id from the URL
+export default function CardPage() { 
+  const { id } = useParams(); 
+  const navigate = useNavigate(); // useNavigate for navigation
+  const { addToCart } = useCart(); // Get addToCart from the CartContext
   const product = dior.find((item) => item.id === parseInt(id)); // Find the product by id
-  const [query, setQuery]= useState("");
+  
   if (!product) {
     return <div>Product not found</div>; // Handle case where product doesn't exist
   }
 
   const { Image, title, description, price } = product;
 
+  const viewCart = () => {
+    navigate('/cart'); // Navigate to the cart page
+  };
+
   return (
-    
     <section className="card-page">
-      
       <img src={Image} alt={title} className="card-img" />
       <div className="card-description">
-        <h1 className="card-titlee">{title}</h1>
+        <h1 className="card-title">{title}</h1>
         <p>{description}</p>
         <h3>{price}$</h3>
-        <Button>Add to Cart</Button>
+        <button onClick={() => addToCart(product)}>Add to Cart</button>
+        <button onClick={viewCart} id="cartButton">
+          View Cart
+        </button>
       </div>
     </section>
   );
 }
- 
