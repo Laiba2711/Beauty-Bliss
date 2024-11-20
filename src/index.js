@@ -9,8 +9,7 @@ root.render(
   <React.StrictMode>
 
     <CartProvider>
-    <AppComp />
-      
+    <AppComp />  
     </CartProvider>
     
   </React.StrictMode>

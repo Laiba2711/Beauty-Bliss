@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <>
    <div className="heroSec">
-    <div className="container">
+    <div className="containerr">
       <div className="image-section left">
         <img src="./BB-HERO2.jpg" alt="Left Image" />
       </div>
