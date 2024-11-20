@@ -20,7 +20,7 @@ const Cart = () => {
 
   return (
     <div id="cartPage">
-      <h2>Cart</h2>
+      <h2>𝑩𝑩 𝑪𝒂𝒓𝒕</h2>
       <div id="cartContainer">
         {cart.length === 0 ? (
           <p>Your cart is empty.</p>
@@ -46,7 +46,7 @@ const Cart = () => {
                   +
                 </button>
               </div>
-              <p>Total: ${(product.price * product.quantity).toFixed(2)}</p>
+              <p >Total: ${(product.price * product.quantity).toFixed(2)}</p>
               <button className='removeFcart' onClick={() => removeFromCart(product.id)}>Remove</button>
             </div>
           ))
