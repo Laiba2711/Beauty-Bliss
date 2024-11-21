@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-us {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    background:linear-gradient(to left, rgba(20, 20, 20, 0.721), rgba(192, 190, 192, 0.457)), url('/public/AboutBB.jpg'); 
+   background-size: cover;
+   background-repeat: no-repeat;
+  }
+  
+  .img h4 {
+    text-align: center;
+    height: 450px;
+    width: 350px;
+    margin: auto;
+    font-size: 25px;
+    padding: 220px 20px;
+    color: rgb(187, 153, 166);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -1px -1px 2px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
+  
+   
+  }
+  .img{
+    height: 450px;
+    width: 350px;
+    border-radius: 12px;
+    background:linear-gradient(to left, rgba(94, 91, 91, 0.721), rgba(82, 79, 79, 0.457)), url('/public/style.jpg'); 
+    background-size: cover;
+   background-repeat: no-repeat;
+  }
+  .about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .text {
+    width: 540px;
+  }
+  
+  .text h2 {
+    color: #242424;
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .text h5 {
+    color: #1b1b1b;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  h5 span {
+    font-family: Arial, sans-serif;
+    color: #c2ac2f; 
+    font-size: 28px;
+  
+  }
+    
+  .text p {
+    color: #252424;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .data {
+    margin-top: 30px;
+  }
+  
+  .hire {
+    font-size: 18px;
+    background:  #c2ac2f;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .hire:hover {
+    background: #000;
+  }
+  
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background:linear-gradient(to left, rgba(70, 2, 33, 0.5), rgba(68, 59, 64, 0.457)); 
+    /* -webkit-background-clip: text; 
+    background-clip: text; */
+    padding: 30px;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 50s linear infinite;
+  }
+  
+  .quote {
+    display: inline-block;
+    margin-right: 50px; /* Adjust this value for the gap between quotes */
+  }
+  
+  @keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+  .qoutes{
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  .quote {
+    display: inline-block;
+    text-align: center;
+    margin-right: 50px; /* Adjust the gap between quotes */
+    font-size: 20px; /* Font size for the quote */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-weight: bold; /* Bold font */
+    color: #fff; /* Base color of the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -1px -1px 2px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
+    letter-spacing: 1px; /* Spacing between letters */
+  }

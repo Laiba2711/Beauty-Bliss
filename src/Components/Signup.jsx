@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"; 
 import "./Signup.css";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
   const handleSignup = (e) => {
@@ -45,7 +46,7 @@ export default function Signup() {
           </motion.button>
         </form>
         <p className="login-prompt LSB">
-          Already have an account? <a href="/login">Log in here</a>
+          Already have an account? <Link to="/login">Log in here</Link>
         </p>
       </div>
     </motion.div>

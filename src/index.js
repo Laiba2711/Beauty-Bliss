@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import AppComp from './App';
 import { CartProvider } from './Pages/CartContext';
+import Popup from './PopUp';
 
 
 
@@ -11,6 +12,7 @@ root.render(
 
     <CartProvider>
     <AppComp />  
+    <Popup />
     </CartProvider>
     
   </React.StrictMode>

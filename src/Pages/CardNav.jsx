@@ -9,6 +9,8 @@ import HeroSection from './HeroSection';
 import Footer from '../Components/Footer';
 import Navbarr from '../Components/Navbar';
 import ScrollToTop from '../ScrollToTop';
+import AboutUs from './AboutUs';
+import ContactUs from './ContactUs';
 
 
 export default function NavigatePage() {
@@ -24,6 +26,9 @@ export default function NavigatePage() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/about" element={<AboutUs />}/>
+        <Route path="/contact" element={<ContactUs />}/>
+
       </Routes>
     <Footer />
     </BrowserRouter>

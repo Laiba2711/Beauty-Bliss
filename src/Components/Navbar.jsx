@@ -12,10 +12,10 @@ export default function Navbarr() {
     </label>
    <img src="logo1.png" alt="" height="80%"   />
     <ul className='nav-icons'>
-      <li><a class="active" href="/">Home</a></li>
-
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>      
+      <li><Link to="/" className="active">Home</Link></li>
+      <li><Link to="/card">Product</Link></li>
+      <li><Link to="/about">About</Link></li>
+      <li><Link to="/contact">Contact</Link></li>      
     </ul>
       
     
@@ -24,8 +24,8 @@ export default function Navbarr() {
     Profile <i class='fas fa-caret-down' ></i>
   </Button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <a href="/signup" className="dropdown-item" type="button">Sign Up </a>
-    <a href="/login" className="dropdown-item" type="button">Log In </a>
+    <Link to="/signup" className="dropdown-item" type="button">Sign Up </Link>
+    <Link to="/login" className="dropdown-item" type="button">Log In </Link>
   </div>
 </div>
 
