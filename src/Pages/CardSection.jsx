@@ -3,6 +3,7 @@ import { dior } from './Api.js';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
 import '../style.css';
+import { useCart } from './CartContext';
 
 
 export default function Cards() {
@@ -43,7 +44,8 @@ export default function Cards() {
   const handleCategoryChange = (newCategory) => {
     setCategory(newCategory);
   };
-
+ 
+  const { totalQuantity } = useCart();
   return (
     <>
       <div className='shop-area'> 
@@ -73,6 +75,7 @@ export default function Cards() {
 
           <Link to={`/cart`} className='cart-icon'>
             <i className="fas fa-shopping-cart"></i>
+            {totalQuantity > 0 && <span className="cart-quantity">{totalQuantity}</span>}
           </Link>
         </div>
 

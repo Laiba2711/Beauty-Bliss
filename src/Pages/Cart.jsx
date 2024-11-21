@@ -6,6 +6,7 @@ import './Cart.css';
 const Cart = () => {
   const navigate = useNavigate();
   const { cart, updateQuantity, removeFromCart } = useCart();
+ 
 
   const totalCartPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
