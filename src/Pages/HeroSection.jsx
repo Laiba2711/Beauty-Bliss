@@ -3,7 +3,7 @@ import "../style.css"
 import Cards from './CardSection'
 import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
-import Popup from '../PopUp'
+
 export default function HeroSection() {
   return (
     <>
@@ -20,8 +20,8 @@ export default function HeroSection() {
     </div>
   </div>
   <Cards />
-  <AboutUs />
-  <ContactUs />
+   <AboutUs />
+  <ContactUs /> 
     </>
     
   )

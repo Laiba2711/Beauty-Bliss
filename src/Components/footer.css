@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
-}
+
 body{
   min-height: 100vh;
   width: 100%;
@@ -200,53 +195,51 @@ footer .bottom-details .bottom_text{
 .bottom-details .bottom_text a{
   margin-right: 10px;
 }
-@media (max-width: 900px) {
-  footer .content .link-boxes{
-    flex-wrap: wrap;
+@media (max-width: 250px) {
+  footer .content .top {
+    flex-direction: column;
+    align-items: flex-start;
+    
   }
-  footer .content .link-boxes .input-box{
-    width: 40%;
-    margin-top: 10px;
+
+  footer .content .link-boxes {
+    flex-direction: column;
+    align-items: stretch;
+    display: none;
   }
-}
-@media (max-width: 700px){
-  footer{
-    position: relative;
+
+  footer .content .link-boxes .box {
+    width: 100%; /* Ensure box takes full width */
+    margin-bottom: 10px;
   }
-  .content .top .logo-details{
-    font-size: 26px;
+
+  footer .content .link-boxes .input-box {
+    width: 100%; /* Ensure input box is 100% width */
+   
+    
   }
-  .content .top .media-icons a{
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    line-height: 35px;
+
+  footer .content .link-boxes .input-box input {
+    width: 100%; /* Full width for small screens */
   }
-  footer .content .link-boxes .box{
-    width: calc(100% / 3 - 10px);
+
+  footer .bottom-details .bottom_text {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  footer .content .link-boxes .input-box{
-    width: 60%;
-  }
-  .bottom-details .bottom_text span,
-  .bottom-details .bottom_text a{
+
+  footer .bottom-details .bottom_text span,
+  footer .bottom-details .bottom_text a {
     font-size: 12px;
   }
 }
-@media (max-width: 520px){
-  footer::before{
-    top: 145px;
-  }
-  footer .content .top{
-    flex-direction: column;
-  }
-  .content .top .media-icons{
-    margin-top: 16px;
-  }
-  footer .content .link-boxes .box{
-    width: calc(100% / 2 - 10px);
-  }
-  footer .content .link-boxes .input-box{
-    width: 100%;
-  }
+.sub-popup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 10px 30px;
+}
+.sub-popup .popup-content{
+  padding: 10px 30px;
 }

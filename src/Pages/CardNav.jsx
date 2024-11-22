@@ -20,7 +20,7 @@ export default function NavigatePage() {
         <ScrollToTop/>
        <Navbarr />
       <Routes>
-        <Route path="/" element={<HeroSection />} />
+        <Route exact path="/" element={<HeroSection />} />
         <Route path="/card" element={<Cards />} />
         <Route path="/card/:id" element={<CardPage />} />
         <Route path="/cart" element={<Cart />} />
