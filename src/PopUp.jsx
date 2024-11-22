@@ -4,14 +4,15 @@ import './style.css'; // Ensure this file is correctly linked
 export default function Popup() {
   const [showPopup, setShowPopup] = useState(false);
 
-  // Show popup after 5 seconds of page load
+  // Show popup every 5 seconds
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 100); 
+    // Set an interval to show the popup every 5 seconds
+    const interval = setInterval(() => {
+      setShowPopup(true); // Show the popup every 5 seconds
+    }, 30000); // Popup appears every 5 seconds
 
-    // Clean up the timer if the component is unmounted before 4 seconds
-    return () => clearTimeout(timer);
+    // Clean up the interval when the component is unmounted
+    return () => clearInterval(interval);
   }, []);
 
   // Close the popup when the user clicks the close button
