@@ -6,28 +6,15 @@ body{
   /* background: #ece7e5; */
 }
 
-
-footer{
-  /* position: fixed; */
-  background: rgba(116, 30, 116, 0.425);
+ footer{
+  background: rgba(44, 19, 44, 0.753);
   width: 100%;
-  /* bottom: 0;
-  left: 0; */
-  /* margin-top: 90px; */
 }
-/* footer::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 100px;
-  height: 1px;
-  width: 100%;
-  background: #AFAFB6;
-} */
-footer .content{
+ footer .content{
   max-width: 1250px;
   /* margin: auto; */
   padding: 30px 40px 40px 40px;
+  margin: 0px 50px;
 }
 footer .content .top{
   display: flex;

@@ -1,8 +1,9 @@
 import React from 'react'
 import "../style.css"
 import Cards from './CardSection'
-import AboutUs from './AboutUs'
-import ContactUs from './ContactUs'
+import ImageSlider from '../Slider/Slider'
+// import AboutUs from './AboutUs'
+// import ContactUs from './ContactUs'
 
 export default function HeroSection() {
   return (
@@ -20,8 +21,9 @@ export default function HeroSection() {
     </div>
   </div>
   <Cards />
-   <AboutUs />
-  <ContactUs /> 
+   {/* <AboutUs />
+  <ContactUs />  */}
+  <ImageSlider />
     </>
     
   )

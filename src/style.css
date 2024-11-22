@@ -5,8 +5,14 @@
   }
 
 body{
-  background-image:linear-gradient(to left, rgba(160, 151, 160, 0.721), rgba(43, 40, 42, 0.457)), url('./image/image.png'); 
-  background-position: right;
+  /* background-image:linear-gradient(to left, rgba(160, 151, 160, 0.721), rgba(43, 40, 42, 0.457)), url('./image/image.png'); 
+  background-position: right; */
+  body{
+    background-image:linear-gradient(to left, rgba(100, 99, 100, 0.721), rgba(82, 80, 81, 0.897)), url('/public/image.png'); 
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
   .heroSec {
@@ -102,7 +108,7 @@ body{
     background-repeat: no-repeat;   
     background-size: cover;
     background-position: center;
-    /* margin: 100px 0px; */
+    
 }
 .beauty img{
     height: 35vh;
